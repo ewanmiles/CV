@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ewan Miles | Graph Plotter</title>
+    <link href="./Stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head> 
+
+<body>
+    <div class="navbar">
+        <div>
+            <h1><a href="./home.php">Ewan Miles</a></h1>
+        </div>
+        <div>
+            <nav>
+                <div class="dropdown"><a href="./home.php#skills">Other Projects
+                    <div class="content">
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
+                    <a href="./runningmean.html">Running Mean</a>
+                    </div>
+                </a></div>
+                <a href="./home.php">Home</a>
+            </nav>
+
+            <!-- Dropdown for mobile media -->
+            <div class="mobile-dropdown"><i class="fas fa-bars"></i>
+                <div class="content">
+                    <a href="home.php" class="current">Home</a>
+                    <hr>
+                    <p id="center">Other Projects</p>
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <hr>
+                    <p id="center">Tools</p>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
+                    <a href="./runningmean.html">Running Mean</a>
+                    <i id="center" class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="flexleft ptitle">
+            <h1>Graph Plotter</h1>
+            <h3>v2</h3>
+        </div>
+        <div class="mobile-hide flexeven">
+            <div class="pphotos">
+                <a href="#lbox1"><img src="./Images/plotter-1.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox1" class="lightbox">
+                        <img src="./Images/plotter-1.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+            <div class="pphotos">
+                <a href="#lbox2"><img src="./Images/plotter-2.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox2" class="lightbox">
+                        <img src="./Images/plotter-2.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Pictures on mobile -->
+        <div class="mobile-display">
+            <div class="pphotos">
+                <a href="./Images/plotter-1.jpg"><img src="./Images/plotter-1.jpg" alt="Derivative Calculator"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+    
+    <div class="text">
+        <p>This Multifunctional Graph Plotter is an iPython <a href="https://jupyter.org" target="_blank">Jupyter Notebook</a> copmrising of several
+            functions and cells which can be used to plot .csv datafiles based on user inputs. Current features of the notebook allow the user to plot
+            multiple series of data with errorbars, styling and labelling each, along with:</p>
+            <ul>
+                <li>Choosing axis type (linear, log, etc.)</li>
+                <li>Fitting a weighted straight line</li>
+                <li>Fitting a polynomial curve with a &chi;<sup>2</sup> value</li>
+                <li>Plotting the polynomial residuals and fitting a Gaussian curve</li>
+            </ul>
+        <p>The script uses logic to suggest appropriate orders of polynomial for the user to choose from; this works based on the fact that the
+            &chi;<sup>2</sup> value should approach 1 for a good fit. It calculates a &chi;<sup>2</sup> value for polynomial orders 1 through 10 and
+            plots a graph of &chi;<sup>2</sup> against order for the user to visualise the most appropriate choice. The order suggested to the user is 
+            the order corresponding to the first value of &chi;<sup>2</sup> to fall below a certain precision (which can be changed by a user if they
+            wish by editing the code cell).
+            <br>
+            In circumstances where the random error is inaccurately estimated on data, &chi;<sup>2</sup> will approach a value higher than 1 and thus
+            the script's logic breaks down. To counteract this, the user can use the graph of &chi;<sup>2</sup> vs. order to look for where it starts
+            to plateau, i.e. the value changes in only small amounts for increasing the order on the polynomial. This allows users to avoid overfitting.</p>
+    </div>
+        
+    <div class="separator"></div>
+
+    <div class="text">
+        <div class="hide-950 flexeven">
+            <div class="pphotos">
+                <a href="#lbox3"><img src="./Images/plotter-3.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox3" class="lightbox">
+                        <img src="./Images/plotter-3.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+            <div class="pphotos">
+                <a href="#lbox4"><img src="./Images/plotter-4.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox4" class="lightbox">
+                        <img src="./Images/plotter-4.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+            <div class="pphotos">
+                <a href="#lbox5"><img src="./Images/plotter-5.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox5" class="lightbox">
+                        <img src="./Images/plotter-5.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+            <div class="pphotos">
+                <a href="#lbox6"><img src="./Images/plotter-6.jpg" alt="Graph Plotter"></a>
+                    <div id="lbox6" class="lightbox">
+                        <img src="./Images/plotter-6.jpg" alt="Graph Plotter">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Pictures on mobile -->
+        <div class="display-950">
+            <div class="pphotos">
+                <a href="./Images/plotter-2.jpg"><img src="./Images/plotter-2.jpg" alt="Derivative Calculator"></a>
+                <a href="./Images/plotter-3.jpg"><img src="./Images/plotter-3.jpg" alt="Derivative Calculator"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="text">  
+        <p>After each step of plotting the graph, e.g. bare plot, fitted line, there is a save cell giving the user the opportunity to save the figure 
+            to file's local directory after giving it a name.
+            <br>
+            The libraries used in the notebook include <bf><a href="https://numpy.org" target="_blank">NumPy</a></bf>, <bf><a href="https://matplotlib.org" target="_blank">
+            matplotlib</a></bf>, <bf><a href="https://ipywidgets.readthedocs.io/en/stable/" target="_blank">iPyWidgets</a></bf> and 
+            <bf><a href="https://docs.scipy.org/doc/scipy/reference/stats.html" target="_blank">SciPy.stats</a></bf>. The future plans for the project are to introduce
+            new types of graph, such as streamplots, and to build a GUI for the program.
+        </p>
+        <br><br>
+        <div id="center" class="dl">
+            <h3>Click the image below to download Graph Plotter v2:</h3>
+            <br>
+            <a href="./Download/GraphPlotter.ipynb" download="Graph Plotter.ipynb"><img src="./Images/chitest.jpg" alt="Download the Graph plotter"></a>
+            <h4>Last updated: 13/08/2020</h4>
+        </div>
+    </div>
+</body>
+</html>

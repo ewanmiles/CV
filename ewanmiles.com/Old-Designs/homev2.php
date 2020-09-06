@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Ewan Miles | CV</title>
-    <link href="Stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="stylev2.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -53,7 +53,7 @@
 
     <div class="flexcenter header">
         <div class="portrait">
-            <img src="./Images/portrait.jpg" alt="Portrait">
+            <img src="./Old-Images/portrait.jpg" alt="Portrait">
         </div>
         <div class="flexcolumn title">
             <h1>Ewan Miles</h1>
@@ -61,23 +61,23 @@
         </div>
     </div>
     <div class="text">
-        <p>I am a motivated MSci Physics student currently in attendance at University College London. I am in third
-            year for the 2020/21 academic year, having achieved a 1st class grade in both second and first year.
-            I have experience working in different environments, alongside other 
+        <p>I am a motivated second year MSci Physics student currently in attendance at University College London, having
+            achieved a 1st in first year. I have experience working in different environments, alongside other 
             accomplishments, but am looking to kick-start my career in the programming and data science sectors.
+        </p>
     </div>
 
     <div class="flexeven links">
         <div>
-            <a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank"><img src="./Images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank"><img src="./Old-Images/linkedin.png" alt="LinkedIn"></a>
             <p><a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank">Ewan on LinkedIn</a></p>
         </div>
         <div>
-            <a href="https://twitter.com/MilesEwan" target="_blank"><img src="./Images/twitter.png" alt="Instagram"></a>
+            <a href="https://twitter.com/MilesEwan" target="_blank"><img src="./Old-Images/twitter.png" alt="Instagram"></a>
             <p><a href="https://twitter.com/MilesEwan" target="_blank">Ewan on Twitter</a></p>
         </div>
         <div>
-            <a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank"><img src="./Images/stack.png" alt="Stack Exchange"></a>
+            <a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank"><img src="./Old-Images/stack.png" alt="Stack Exchange"></a>
             <p><a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank">Ewan on Stack Exchange</a></p>
         </div>
     </div>
@@ -87,18 +87,17 @@
     <div class="text">
         <h2 class="year">2018-Present</h2>
         <div class="flexleft company">
-            <a href="https://www.ucl.ac.uk" target="_blank"><img src="./Images/ucl.png" alt="UCL"></a>
+            <a href="https://www.ucl.ac.uk" target="_blank"><img src="./Old-Images/ucl.png" alt="UCL"></a>
             <h2>University College London (UCL)</h2>
         </div>
         <ul>
-            <li>Currently in the third year studying for an MSci Physics degree</li>
-            <li>Achieved a first class grade in both Year 1 and Year 2</li>
+            <li>Currently in the second year studying for an MSci Physics degree, having achieved a 1st class grade in first year</li>
             <li>Voted Social Executive of the UCL Physics Society, beating fierce competition</li>
         </ul>
 
         <h2 class="year">2016-2018</h2>
         <div class="flexleft company">
-            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
+            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Old-Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
             <h2>Ysgol Dewi Sant Sixth Form</h2>
         </div>
         <ul>
@@ -109,7 +108,7 @@
 
         <h2 class="year">2011-2016</h2>
         <div class="flexleft company">
-            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
+            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Old-Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
             <h2>Ysgol Dewi Sant Secondary School</h2>
         </div>
         <ul>
@@ -121,11 +120,11 @@
         <h2 class="year">Other Qualifications</h2>
         <div class="flexleft quals">
             <div class="flexleft">
-                <a href="https://www.highspeedtraining.co.uk" target="_blank"><img src="./Images/highspeed.jpg" alt="High Speed Training"></a>
+                <a href="https://www.highspeedtraining.co.uk" target="_blank"><img src="./Old-Images/highspeed.jpg" alt="High Speed Training"></a>
                 <p>Level 2 Food Safety and Hygiene for Catering</p>
             </div>
             <div class="flexleft">
-                <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service" target="_blank"><img src="./Images/dbs.jpg" alt="Disclosure & Barring Service"></a>
+                <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service" target="_blank"><img src="./Old-Images/dbs.jpg" alt="Disclosure & Barring Service"></a>
                 <p>Enhanced Certificate: Disclosure & Barring Service check</p>
             </div>
         </div>
@@ -134,7 +133,7 @@
         <h2 class="year">Extra-Curricular Activities</h2>
         <br>
         <div class="flexleft">
-            <a href="https://www.uclphysoc.com" target="_blank" class="logo"><img src="./Images/physoc.png" alt="UCL Physics Society"></a>
+            <a href="https://www.uclphysoc.com" target="_blank" class="logo"><img src="./Old-Images/physoc.png" alt="UCL Physics Society"></a>
             <h2 class="language">UCL Physics Society</h2>
         </div>
         <p>I was elected as Social Executive by the physics student body as part of the 2019/20 commitee for the UCL Physics Society. The role, which required a lot of organisation 
@@ -142,7 +141,7 @@
             included the rest of the committee and working directly with others. It provided me with a fantastic learning experience and developed my whole skillset.</p>
         <br>
         <div class="flexleft">
-            <a href="https://www.bbc.co.uk/programmes/n27vnnl3" target="_blank" class="logo"><img src="./Images/bbc.png" alt="BBC"></a>
+            <a href="https://www.bbc.co.uk/programmes/n27vnnl3" target="_blank" class="logo"><img src="./Old-Images/bbc.png" alt="BBC"></a>
             <h2 class="language">BBC Documentary: School Swap Korea Style</h2>
         </div>
         <p>One of the most influential experiences of my life so far, I was part of a trip to South Korea with the BBC 
@@ -152,7 +151,7 @@
         </p>
         <br>
         <div class="flexleft">
-            <a href="http://www.stemcymru.org.uk" target="_blank" class="logo"><img src="./Images/eesw.jpg" alt="EESW"></a>
+            <a href="http://www.stemcymru.org.uk" target="_blank" class="logo"><img src="./Old-Images/eesw.jpg" alt="EESW"></a>
             <h2 class="language">STEM Cymru: Engineering Education Scheme Wales School Competition</h2>
         </div>
         <p>I participated in an Engineering Education Scheme Wales (EESW) school competition across my county, in which I was part of a team that 
@@ -167,7 +166,7 @@
         <h2 class="year">2019-2020</h2>
         <h2>121 ASCENTS Student Mentoring</h2>
         <div class="flexleft company">
-            <a href="http://natcen.ac.uk" target="_blank"><img src="./Images/natcen.jpg" alt="NatCen"></a>
+            <a href="http://natcen.ac.uk" target="_blank"><img src="./Old-Images/natcen.jpg" alt="NatCen"></a>
             <h3>NatCen Social Research</h3>
         </div>
         <ul>
@@ -178,7 +177,7 @@
         <h2 class="year">2019</h2>
         <h2>Staff & Product Manager</h2>
         <div class="flexleft company">
-            <a href="http://coastalstay.co.uk" target="_blank"><img src="./Images/coastalstay.png" alt="Coastal Stay"></a>
+            <a href="http://coastalstay.co.uk" target="_blank"><img src="./Old-Images/coastalstay.png" alt="Coastal Stay"></a>
             <h3>Coastal Stay Pizza Oven</h3>
         </div>
         <ul>
@@ -189,7 +188,7 @@
         <h2 class="year">2015</h2>
         <h2>Work Experience</h2>
         <div class="flexleft company">
-            <a href="https://www.mandg.co.uk" target="_blank"><img src="./Images/mandg.png" alt="M&G"></a>
+            <a href="https://www.mandg.co.uk" target="_blank"><img src="./Old-Images/mandg.png" alt="M&G"></a>
             <h3>M&G Investments, London</h3>
         </div>
         <ul>
@@ -205,7 +204,7 @@
         <h2 class="year">2016-2018</h2>
         <h2>Restaurant Team Member</h2>
         <div class="flexleft company">
-            <a href="https://siopfach.com" target="_blank"><img src="./Images/siopfach.png" alt="Siop Fach"></a>
+            <a href="https://siopfach.com" target="_blank"><img src="./Old-Images/siopfach.png" alt="Siop Fach"></a>
             <h3>Siop Fach Tearoom, Mathry</h3>
         </div>
         <ul>
@@ -215,7 +214,7 @@
         <h2 class="year">2014-2016</h2>
         <h2>Restaurant Team Member</h2>
         <div class="flexleft company">
-            <a href="https://sites.google.com/view/projectsc/home?authuser=0" target="_blank"><img src="./Images/somethingscooking.jpg" alt="Something's Cooking"></a>
+            <a href="https://sites.google.com/view/projectsc/home?authuser=0" target="_blank"><img src="./Old-Images/somethingscooking.jpg" alt="Something's Cooking"></a>
             <h3>Something's Cooking, Letterston</h3>
         </div>
         <ul>
@@ -245,7 +244,7 @@
         <h2 id="center">Projects</h2>
         <div class="flexeven mobile-projects">
             <a href="./graph-plotter.html" class="projects"><div class="flexleft">
-                <img src="./Images/chitest.jpg" alt="Graph Plotter">
+                <img src="./Old-Images/chitest.jpg" alt="Graph Plotter">
                 <div class="desc">
                     <h3>Graph Plotter</h3>
                     <br>
@@ -253,7 +252,7 @@
                 </div>
             </div></a>
             <a href="./derivative-calculator.html" class="projects"><div class="flexleft">
-                <img src="./Images/calculator.jpg" alt="Graph Plotter">
+                <img src="./Old-Images/calculator.jpg" alt="Graph Plotter">
                 <div class="desc">
                     <h3>Derivative Calculator</h3>
                     <br>
@@ -265,19 +264,19 @@
         <h2 id="center">Tools & Scripts</h2>
         <div class="flexeven mobile-projects">
             <a href="./routefinder.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/routefinder.jpg" alt="RouteFinder">
+                <img src="./Old-Images/routefinder.jpg" alt="RouteFinder">
                 <h2 id="center">RouteFinder</h2>
             </div></a>
             <a href="./pingmodeller.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/pingmodeller.jpg" alt="Ping Modeller">
+                <img src="./Old-Images/pingmodeller.jpg" alt="Ping Modeller">
                 <h2 id="center">Ping Modeller</h2>
             </div></a>
             <a href="./numericaldifferentiation.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/numericaldifferentiation.jpg" alt="Numerical Differentiation">
+                <img src="./Old-Images/numericaldifferentiation.jpg" alt="Numerical Differentiation">
                 <h2 id="center">Numerical Differentiation</h2>
             </div></a>
             <a href="./runningmean.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/runningmean.jpg" alt="Running Mean">
+                <img src="./Old-Images/runningmean.jpg" alt="Running Mean">
                 <h2 id="center">Running Mean</h2>
             </div></a>
         </div>

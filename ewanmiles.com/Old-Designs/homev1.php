@@ -2,13 +2,11 @@
 <html>
 <head>
     <title>Ewan Miles | CV</title>
-    <link href="Stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="./stylev1.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head> 
 
 <body>
@@ -20,64 +18,41 @@
             <nav>
                 <a href="#education">Education</a>
                 <a href="#experience">Experience</a>
-                <div class="dropdown"><a href="#skills">Skills & Projects
-                    <div class="content">
-                    <a href="./graph-plotter.html">Graph Plotter</a>
-                    <a href="./derivative-calculator.html">Derivative Calculator</a>
-                    <a href="./routefinder.html">RouteFinder</a>
-                    <a href="./pingmodeller.html">Ping Modeller</a>
-                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
-                    <a href="./runningmean.html">Running Mean</a>
-                    </div>
-                </a></div>
+                <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
-
-            <!-- Dropdown for mobile media -->
-            <div class="mobile-dropdown"><i class="fas fa-bars"></i>
-                <div class="content">
-                    <p id="center">Projects</p>
-                    <a href="./graph-plotter.html">Graph Plotter</a>
-                    <a href="./derivative-calculator.html">Derivative Calculator</a>
-                    <hr>
-                    <p id="center">Tools</p>
-                    <a href="./routefinder.html">RouteFinder</a>
-                    <a href="./pingmodeller.html">Ping Modeller</a>
-                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
-                    <a href="./runningmean.html">Running Mean</a>
-                    <i id="center" class="fas fa-times"></i>
-                </div>
-            </div>
         </div>
     </div>
-
     <div class="flexcenter header">
         <div class="portrait">
-            <img src="./Images/portrait.jpg" alt="Portrait">
+            <img src="./Old-Images/portrait.jpg" alt="Portrait">
         </div>
+        
         <div class="flexcolumn title">
             <h1>Ewan Miles</h1>
             <h2 id="center">UCL Undergraduate Physics Student</h2>
         </div>
     </div>
     <div class="text">
-        <p>I am a motivated MSci Physics student currently in attendance at University College London. I am in third
-            year for the 2020/21 academic year, having achieved a 1st class grade in both second and first year.
-            I have experience working in different environments, alongside other 
+        <p>I am a motivated second year MSci Physics student currently in attendance at University College London, having
+            achieved a 1st in first year. I have experience working in different environments, alongside other 
             accomplishments, but am looking to kick-start my career in the programming and data science sectors.
+        </p>
     </div>
 
     <div class="flexeven links">
         <div>
-            <a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank"><img src="./Images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank"><img src="./Old-Images/linkedin.png" alt="LinkedIn"></a>
             <p><a href="https://www.linkedin.com/in/ewan-a-miles/" target="_blank">Ewan on LinkedIn</a></p>
         </div>
+
         <div>
-            <a href="https://twitter.com/MilesEwan" target="_blank"><img src="./Images/twitter.png" alt="Instagram"></a>
+            <a href="https://twitter.com/MilesEwan" target="_blank"><img src="./Old-Images/twitter.png" alt="Instagram"></a>
             <p><a href="https://twitter.com/MilesEwan" target="_blank">Ewan on Twitter</a></p>
         </div>
+
         <div>
-            <a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank"><img src="./Images/stack.png" alt="Stack Exchange"></a>
+                <a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank"><img src="./Old-Images/stack.png" alt="Stack Exchange"></a>
             <p><a href="https://physics.stackexchange.com/users/238343/ewan" target="_blank">Ewan on Stack Exchange</a></p>
         </div>
     </div>
@@ -87,18 +62,17 @@
     <div class="text">
         <h2 class="year">2018-Present</h2>
         <div class="flexleft company">
-            <a href="https://www.ucl.ac.uk" target="_blank"><img src="./Images/ucl.png" alt="UCL"></a>
+            <a href="https://www.ucl.ac.uk" target="_blank"><img src="./Old-Images/ucl.png" alt="UCL"></a>
             <h2>University College London (UCL)</h2>
         </div>
         <ul>
-            <li>Currently in the third year studying for an MSci Physics degree</li>
-            <li>Achieved a first class grade in both Year 1 and Year 2</li>
+            <li>Currently in the second year studying for an MSci Physics degree, having achieved a 1st class grade in first year</li>
             <li>Voted Social Executive of the UCL Physics Society, beating fierce competition</li>
         </ul>
 
         <h2 class="year">2016-2018</h2>
         <div class="flexleft company">
-            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
+            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Old-Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
             <h2>Ysgol Dewi Sant Sixth Form</h2>
         </div>
         <ul>
@@ -109,7 +83,7 @@
 
         <h2 class="year">2011-2016</h2>
         <div class="flexleft company">
-            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
+            <a href="https://twitter.com/ydsstdavids?lang=en" target="_blank"><img src="./Old-Images/dewisant.jpg" alt="Ysgol Dewi Sant"></a>
             <h2>Ysgol Dewi Sant Secondary School</h2>
         </div>
         <ul>
@@ -121,12 +95,12 @@
         <h2 class="year">Other Qualifications</h2>
         <div class="flexleft quals">
             <div class="flexleft">
-                <a href="https://www.highspeedtraining.co.uk" target="_blank"><img src="./Images/highspeed.jpg" alt="High Speed Training"></a>
-                <p>Level 2 Food Safety and Hygiene for Catering</p>
+                <a href="https://www.highspeedtraining.co.uk" target="_blank"><img src="./Old-Images/highspeed.jpg" alt="High Speed Training"></a>
+                <div class="flexcolumn"><p>Level 2 Food Safety and Hygiene for Catering</p></div>
             </div>
             <div class="flexleft">
-                <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service" target="_blank"><img src="./Images/dbs.jpg" alt="Disclosure & Barring Service"></a>
-                <p>Enhanced Certificate: Disclosure & Barring Service check</p>
+                <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service" target="_blank"><img src="./Old-Images/dbs.jpg" alt="Disclosure & Barring Service"></a>
+                <div class="flexcolumn"><p>Enhanced Certificate: Disclosure & Barring Service check</p></div>
             </div>
         </div>
 
@@ -134,7 +108,7 @@
         <h2 class="year">Extra-Curricular Activities</h2>
         <br>
         <div class="flexleft">
-            <a href="https://www.uclphysoc.com" target="_blank" class="logo"><img src="./Images/physoc.png" alt="UCL Physics Society"></a>
+            <a href="https://www.uclphysoc.com" target="_blank" class="logo"><img src="./Old-Images/physoc.png" alt="UCL Physics Society"></a>
             <h2 class="language">UCL Physics Society</h2>
         </div>
         <p>I was elected as Social Executive by the physics student body as part of the 2019/20 commitee for the UCL Physics Society. The role, which required a lot of organisation 
@@ -142,7 +116,7 @@
             included the rest of the committee and working directly with others. It provided me with a fantastic learning experience and developed my whole skillset.</p>
         <br>
         <div class="flexleft">
-            <a href="https://www.bbc.co.uk/programmes/n27vnnl3" target="_blank" class="logo"><img src="./Images/bbc.png" alt="BBC"></a>
+            <a href="https://www.bbc.co.uk/programmes/n27vnnl3" target="_blank" class="logo"><img src="./Old-Images/bbc.png" alt="BBC"></a>
             <h2 class="language">BBC Documentary: School Swap Korea Style</h2>
         </div>
         <p>One of the most influential experiences of my life so far, I was part of a trip to South Korea with the BBC 
@@ -152,7 +126,7 @@
         </p>
         <br>
         <div class="flexleft">
-            <a href="http://www.stemcymru.org.uk" target="_blank" class="logo"><img src="./Images/eesw.jpg" alt="EESW"></a>
+            <a href="http://www.stemcymru.org.uk" target="_blank" class="logo"><img src="./Old-Images/eesw.jpg" alt="EESW"></a>
             <h2 class="language">STEM Cymru: Engineering Education Scheme Wales School Competition</h2>
         </div>
         <p>I participated in an Engineering Education Scheme Wales (EESW) school competition across my county, in which I was part of a team that 
@@ -167,7 +141,7 @@
         <h2 class="year">2019-2020</h2>
         <h2>121 ASCENTS Student Mentoring</h2>
         <div class="flexleft company">
-            <a href="http://natcen.ac.uk" target="_blank"><img src="./Images/natcen.jpg" alt="NatCen"></a>
+            <a href="http://natcen.ac.uk" target="_blank"><img src="./Old-Images/natcen.jpg" alt="NatCen"></a>
             <h3>NatCen Social Research</h3>
         </div>
         <ul>
@@ -178,7 +152,7 @@
         <h2 class="year">2019</h2>
         <h2>Staff & Product Manager</h2>
         <div class="flexleft company">
-            <a href="http://coastalstay.co.uk" target="_blank"><img src="./Images/coastalstay.png" alt="Coastal Stay"></a>
+            <a href="http://coastalstay.co.uk" target="_blank"><img src="./Old-Images/coastalstay.png" alt="Coastal Stay"></a>
             <h3>Coastal Stay Pizza Oven</h3>
         </div>
         <ul>
@@ -189,7 +163,7 @@
         <h2 class="year">2015</h2>
         <h2>Work Experience</h2>
         <div class="flexleft company">
-            <a href="https://www.mandg.co.uk" target="_blank"><img src="./Images/mandg.png" alt="M&G"></a>
+            <a href="https://www.mandg.co.uk" target="_blank"><img src="./Old-Images/mandg.png" alt="M&G"></a>
             <h3>M&G Investments, London</h3>
         </div>
         <ul>
@@ -205,7 +179,7 @@
         <h2 class="year">2016-2018</h2>
         <h2>Restaurant Team Member</h2>
         <div class="flexleft company">
-            <a href="https://siopfach.com" target="_blank"><img src="./Images/siopfach.png" alt="Siop Fach"></a>
+            <a href="https://siopfach.com" target="_blank"><img src="./Old-Images/siopfach.png" alt="Siop Fach"></a>
             <h3>Siop Fach Tearoom, Mathry</h3>
         </div>
         <ul>
@@ -215,7 +189,7 @@
         <h2 class="year">2014-2016</h2>
         <h2>Restaurant Team Member</h2>
         <div class="flexleft company">
-            <a href="https://sites.google.com/view/projectsc/home?authuser=0" target="_blank"><img src="./Images/somethingscooking.jpg" alt="Something's Cooking"></a>
+            <a href="https://sites.google.com/view/projectsc/home?authuser=0" target="_blank"><img src="./Old-Images/somethingscooking.jpg" alt="Something's Cooking"></a>
             <h3>Something's Cooking, Letterston</h3>
         </div>
         <ul>
@@ -228,74 +202,87 @@
 
     <h1 id="skills" class="subtitle">Skills & Projects</h1>
 
-    <div class = "text">
+    <div class="text">
         <h1 class="skill">Coding & Software Development</h1>
         <div class="flexleft">
             <i class="fab fa-python icon"></i>
-            <h2 class="language">Python</h2>
+            <h2 class="language">Python 3</h2>    
         </div>
-
-        <p>First and foremost, I am trained in Python to carry out data science and computational physics tasks. These vary from crunching
-            data to calibrate circuitry, to modelling wavefunctions in different potential wells, to extrapolating relationships in data using
-            statistical methods.
-            <br>
-            Below are some personal projects and tools that I am currently developing; click on any of them for an overview of how they work.</p>
-            <br>
-        
-        <h2 id="center">Projects</h2>
-        <div class="flexeven mobile-projects">
-            <a href="./graph-plotter.html" class="projects"><div class="flexleft">
-                <img src="./Images/chitest.jpg" alt="Graph Plotter">
-                <div class="desc">
-                    <h3>Graph Plotter</h3>
-                    <br>
-                    <p>An automated graph plotter with user inputs, including best fit lines, polynomial fits, &chi;<sup>2</sup> calculations and more.</p>
-                </div>
-            </div></a>
-            <a href="./derivative-calculator.html" class="projects"><div class="flexleft">
-                <img src="./Images/calculator.jpg" alt="Graph Plotter">
-                <div class="desc">
-                    <h3>Derivative Calculator</h3>
-                    <br>
-                    <p>A mathematical derivative calculator with functions that slice string inputs to carry out operations, returning the first derivative of an expression.</p>
-                </div>
-            </div></a>
-        </div>
-
-        <h2 id="center">Tools & Scripts</h2>
-        <div class="flexeven mobile-projects">
-            <a href="./routefinder.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/routefinder.jpg" alt="RouteFinder">
-                <h2 id="center">RouteFinder</h2>
-            </div></a>
-            <a href="./pingmodeller.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/pingmodeller.jpg" alt="Ping Modeller">
-                <h2 id="center">Ping Modeller</h2>
-            </div></a>
-            <a href="./numericaldifferentiation.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/numericaldifferentiation.jpg" alt="Numerical Differentiation">
-                <h2 id="center">Numerical Differentiation</h2>
-            </div></a>
-            <a href="./runningmean.html" class="tools"><div class="flexcolumn">
-                <img src="./Images/runningmean.jpg" alt="Running Mean">
-                <h2 id="center">Running Mean</h2>
-            </div></a>
-        </div>
-
+        <p>I am able to write programs to carry out data science tasks in Python first and foremost. I can also use it for other purposes;
+            a project I am currently working on is building a mathematical derivative calculator. Taking string inputs and using a variety of
+            functions, it slices the string and carries out operations to return the first derivative of an expression.</p>
         <br>
-        <br>
+        <div class="flexeven project">
+            <img class="hover-shadow" src="./Old-Images/calculator-1.png" alt="Derivative Calculator" onclick="openModal();currentSlide(1)">
+            <img class="hover-shadow" src="./Old-Images/calculator-2.png" alt="Derivative Calculator" onclick="openModal();currentSlide(2)">
+            <img class="hover-shadow" src="./Old-Images/calculator-3.png" alt="Derivative Calculator" onclick="openModal();currentSlide(3)">
+        </div>
 
-        <div class="flexleft languages">
+        <!-- The Modal/Lightbox (includes other picture thumbnails ahead) -->
+        <div id="myModal" class="modal">
+            <div class="modal-content" id="center">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+      
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./Old-Images/calculator-1.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./Old-Images/calculator-2.png">
+                </div>
+      
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./Old-Images/calculator-3.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./Old-Images/tailors-1.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./Old-Images/tailors-2.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./Old-Images/tailors-3.png">
+                </div>
+      
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+                <!-- Thumbnail image controls -->
+                <div class="flexeven">
+                    <img class="demo" src="./Old-Images/calculator-1.png" onclick="currentSlide(1)" alt="Derivative Calculator">
+                    <img class="demo" src="./Old-Images/calculator-2.png" onclick="currentSlide(2)" alt="Derivative Calculator">
+                    <img class="demo" src="./Old-Images/calculator-3.png" onclick="currentSlide(3)" alt="Derivative Calculator">
+                    <img class="demo" src="./Old-Images/tailors-1.png" onclick="currentSlide(4)" alt="The Old Tailor's Website">
+                    <img class="demo" src="./Old-Images/tailors-2.png" onclick="currentSlide(5)" alt="The Old Tailor's Website">
+                    <img class="demo" src="./Old-Images/tailors-3.png" onclick="currentSlide(6)" alt="The Old Tailor's Website">
+                </div>
+            </div>
+        </div>
+
+        <div class="flexleft">
             <i class="fab fa-html5 icon"></i>
             <h2 class="language">HTML5</h2>
             <i class="fab fa-css3-alt icon"></i>
             <h2 class="language">CSS</h2>
         </div>
-        
-        <p>In addition to my training in Python, I am self-taught in front-end languages HTML5 and CSS. I was part of a team that worked on writing the 
-            homepage for the Pompey Pirates literacy hub (not yet launched), which is a volunteering service set up to help children with reading
-            and literacy skills. Furthermore, this website is itself exhibits some of what I've learned, including pure CSS dropdown menus and image lightboxes.</p>
+        <p>In addition to my training in Python, I am self-taught in front-end languages HTML5 and CSS, and am currently working on a paid project for a
+            holiday cottage business, building a page for each cottage they run. Below are a few templates used in one of the sites.</p>
         <br>
+        <div class="flexeven project">
+            <img class="hover-shadow" src="./Old-Images/tailors-1.png" alt="The Old Tailor's Website" onclick="openModal();currentSlide(4)">
+            <img class="hover-shadow" src="./Old-Images/tailors-2.png" alt="The Old Tailor's Website" onclick="openModal();currentSlide(5)">
+            <img class="hover-shadow" src="./Old-Images/tailors-3.png" alt="The Old Tailor's Website" onclick="openModal();currentSlide(6)">
+        </div>
     </div>
 
     <h1 id="contact" class="subtitle">Contact Me</h1>
@@ -329,6 +316,7 @@
 
     <div class="footer">
         <h4>Ewan Miles</h4>
+        <h4>Copyright &copy; ewanmiles.com</h4>
         <h4><span id="time"></span></h4>
     
         <!--Script for date in footer-->
@@ -338,5 +326,49 @@
         </script>  
 
     </div>
+
+    <!--Script for lightbox images-->
+    <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+        
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+                
+    var slideIndex = 1;
+    showSlides(slideIndex);
+                
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+                
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+                
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ewan Miles | Numerical Differentiation</title>
+    <link href="./Stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head> 
+
+<body>
+    <div class="navbar">
+        <div>
+            <h1><a href="./home.php">Ewan Miles</a></h1>
+        </div>
+        <div>
+            <nav>
+                <div class="dropdown"><a href="./home.php#skills">Other Projects
+                    <div class="content">
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="./graph-plotter.html">Graph Plotter</a>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./runningmean.html">Running Mean</a>
+                    </div>
+                </a></div>
+                <a href="./home.php">Home</a>
+            </nav>
+
+            <!-- Dropdown for mobile media -->
+            <div class="mobile-dropdown"><i class="fas fa-bars"></i>
+                <div class="content">
+                    <a href="home.php" class="current">Home</a>
+                    <hr>
+                    <p id="center">Projects</p>
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="./graph-plotter.html">Graph Plotter</a>
+                    <hr>
+                    <p id="center">Other Tools</p>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./runningmean.html">Running Mean</a>
+                    <i id="center" class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="flexleft ptitle">
+            <h1>Numerical Differentiation</h1>
+        </div>
+        <div class="flexeven">
+            <div class="toolsleft">
+                <p>This rudimentary numerical differentiation script, although very basic, is very useful. It is a <a href="https://jupyter.org" target="_blank">Jupyter Notebook</a>
+                    and consists of one function, defined as <bf>&ldquo;diff&rdquo;</bf>, which uses the <a href="https://numpy.org" target="_blank">NumPy</a> module. It allows
+                    the user to input an x-array and y-array (typically graphed data), where it uses mathematical methods to approximate the numerical values of 
+                    the first derivatives of each y value. The differentiated values can then be plotted with <a href="https://matplotlib.org" target="_blank">
+                    matplotlib</a>.
+                    <br>
+                    <br>
+                    <div class="mobile-display pphotos">
+                        <a href="Images/differentiation-1.jpg"><img src="./Images/differentiation-1.jpg" alt="Numerical Differentiation"></a>
+                    </div>
+                <p>As is to be expected, considering the methodology used involves approximation, using more datapoints leads to a higher resolution of estimated
+                    derivatives. The script uses the method of finite differences between points in each array, which is aptly described in
+                    <a href="https://en.wikipedia.org/wiki/Numerical_differentiation" target="_blank">this Wikipedia article</a>.
+                    <br><br> 
+                    The script has many uses in my labs work, among other things; for example, where the electric field of a point charge is given by the directional
+                    derivative of a given potential, the script can evaluate the electric field's magnitude for a given potential dataset. This is just one example. It
+                    may not have many uses to the general user, but is worth having in various circumstances.
+                </p>
+                <br>
+                <div id="center" class="dl">
+                    <h3>Click the image below to download the Numerical Differentiation script:</h3>
+                    <br>
+                    <a href="./Download/NumericalDiff.ipynb" download="NumericalDiff.ipynb"><img src="./Images/numericaldifferentiation.jpg" alt="Download Numerical Differentiation Script"></a>
+                    <h4>Last updated: 06/05/2020</h4>
+                </div>
+            </div>
+    
+            <div class="flexcolumn mobile-hide toolsright">
+                <div class="pphotos">
+                    <a href="#lbox"><img src="./Images/differentiation-1.jpg" alt="Numerical Differentiation"></a>
+                    <div id="lbox" class="lightbox">
+                        <img src="./Images/differentiation-1.jpg" alt="Numerical Differentiation">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

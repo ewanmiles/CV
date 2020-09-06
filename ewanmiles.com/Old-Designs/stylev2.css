@@ -58,16 +58,6 @@ a:hover {
     text-align: center;
 }
 
-/* Disappears on non-mobile devices (e.g. disappears on browser) from >500px (see @media) */
-.mobile-display {
-    display: none;
-}
-
-/* Disappears on non-tablet devices (e.g. disappears on browser) from >950px (see @media) */
-.display-950 {
-    display: none;
-}
-
 /* General design of horizontal flexbox with items centered */
 .flexcenter {
     display: flex;
@@ -192,9 +182,6 @@ nav {
 
 .mobile-dropdown .content i {
     padding: 5px;
-    width: 19px;
-    margin: 0 auto;
-    color: rgb(255,208,0);
 }
 
 .mobile-dropdown .content i:hover {
@@ -592,16 +579,6 @@ img.close:hover {
 /* Media queries for phone screen */
 @media (max-width: 500px) {
 
-    /* Disappears on mobile devices (e.g. appears on browser) from <=500px */
-    .mobile-hide {
-        display: none;
-    }
-
-    /* Appears only on mobile devices (e.g. does not appear on browser) from >500px */
-    .mobile-display {
-        display: flex;
-    }
-
     /*Title sizing*/
     h1 {
         font-size: 3em;
@@ -644,16 +621,6 @@ img.close:hover {
         display: none;
     }
 
-    /*Project page media*/
-    .ptitle h3 {
-        margin: 0 auto;
-    }
-
-    /*Tools page media*/
-    .toolsleft {
-        width: 100%;
-    }
-
     /*Mobile Dropdown media to avoid font-size change*/
     .mobile-dropdown a {
         font-size: 1.2em;
@@ -676,29 +643,10 @@ img.close:hover {
         margin: 0;
         width: 95%;
     }
-
-    /*Project page media*/
-    .ptitle {
-        flex-direction: column;
-    }
-
-    .ptitle h3 {
-        margin: 0 auto;
-    }
 }
 
 /* Media queries for tablet screen */
 @media (max-width: 950px) {
-
-    /* Disappears on table devices (e.g. appears on browser) from <=9500px */
-    .hide-950 {
-        display: none;
-    }
-
-    /* Appears only on tablet devices (e.g. does not appear on browser) from >950px */
-    .display-950 {
-        display: flex;
-    }
 
     /*Projects section media*/
     .mobile-projects {
@@ -730,10 +678,6 @@ img.close:hover {
 
     a.tools img {
         display: none;
-    }
-
-    .ptitle h1 {
-        text-align: left;
     }
 
     /*Nav media*/
