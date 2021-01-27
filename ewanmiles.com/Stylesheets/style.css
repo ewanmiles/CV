@@ -1,0 +1,752 @@
+/* Add smooth scrolling to navbar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General design of body */
+body {
+    background-image: url("../Images/back.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Catamaran', sans-serif;
+    padding: 0;
+    margin: 4em 0 0 0;
+}
+
+/* Design of h1, featured in header and as subtitles */
+h1 {
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Design of h2, featured in subsections */
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Design of h3, featured as job titles and in header */
+h3 {
+    font-size: 1.5em;
+}
+
+/* General design of paragraphs */
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Default hyperlink*/
+a {
+    color: rgb(134, 114, 48);
+    text-decoration: none;
+    margin: none;
+}
+
+/* Mouse over hyperlink*/
+a:hover {
+    color: rgb(185, 158, 69);
+}
+
+/* ID to center text at any point */
+#center {
+    text-align: center;
+}
+
+/* Disappears on non-mobile devices (e.g. disappears on browser) from >500px (see @media) */
+.mobile-display {
+    display: none;
+}
+
+/* Disappears on non-tablet devices (e.g. disappears on browser) from >950px (see @media) */
+.display-950 {
+    display: none;
+}
+
+/* General design of horizontal flexbox with items centered */
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+/* General design of horizontal flexbox with no centering */
+.flexrow {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* General design of horizontal flexbox with items spaced evenly */
+.flexeven {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* General design of horizontal flexbox with items aligned left */
+.flexleft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* General design of vertical flexbox with items spaced evenly */
+.flexcolumn {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Design of navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0,0,0);
+    border-bottom: 0.3em solid rgb(255, 208, 0);
+    overflow: visible;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 100;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 4em;
+}
+
+/*default nav button*/
+.navbar a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 0 1.5em;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/*mouse over nav button*/
+.navbar a:hover {
+    color: rgb(185, 158, 69);
+    text-decoration: none;
+}
+
+.navbar h1 {
+    font-size: 2em;
+}
+
+.navbar i {
+    display: none;
+    color: #FFF;
+    font-size: 20pt;
+    margin: 0.75em 0.5em 0 0;
+}
+
+nav {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Dropdown menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .content {
+    display: block;
+    min-width: 100%;
+}
+
+/*Dropdown content*/
+.content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 0.2em solid rgb(255,208,0);
+}
+
+.content a {
+    display: block;
+    padding: 0.2em 0;
+}
+
+.content p {
+    display: block;
+    padding: 0.2em 0;
+    color: #FFF;
+}
+
+/* Mobile dropdown styling, only appears at width 950px (see @media) */
+.mobile-dropdown:hover .content {
+    margin-top: 20px;
+    display: block;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-dropdown p {
+    color: rgb(255,208,0);
+}
+
+.mobile-dropdown .content i {
+    padding: 5px;
+    width: 19px;
+    margin: 0 auto;
+    color: rgb(255,208,0);
+}
+
+.mobile-dropdown .content i:hover {
+    display: none;
+}
+
+/* Design of header */
+.header {
+    background-color: white;
+}
+
+/* Design of title including name and description*/
+.title {
+    width: 50%;
+    padding: 2.5%;
+    margin: 3% auto 0 0;
+}
+
+.title h2 {
+    font-size: 2.5em;
+    margin: 0px;
+    color: white;
+    background-color: black;
+    border-bottom: 3px solid rgb(255,208,0);
+}
+
+/* Design of portrait photo */
+.portrait {
+    max-width: 22.5%;
+    padding: 0.5%;
+    margin: auto 0 auto auto;
+}
+
+.portrait img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 208, 0);
+    margin: auto 0;
+}
+
+/* Design of links banner */
+.links {
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.links img {
+    width: 4em;
+    border-radius: 25%;
+}
+
+.links img:hover {
+    opacity: 0.8;
+}
+
+/* Design of subtitles */
+.subtitle {
+    color: white;
+    padding: 2%;
+}
+
+/* Design of text-heavy divs */
+.text {
+    background: white;
+    margin-top: 0;
+    padding: 2%;
+}
+
+.text .year {
+    color: rgb(185, 158, 69);
+    font-size: 1.8em;
+}
+
+/* Design of lists under jobs */
+.text ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+.text h3 {
+    margin: 0;
+    color: rgb(145, 145, 145);
+}
+
+/* Design of company/school names and logos */
+.company img {
+    max-width: 3.75em;
+    margin-right: 0.5em;
+}
+
+.company img:hover {
+    opacity: 0.8;
+}
+
+/* Design of other qualifications section */
+
+/*Grid design*/
+.quals p {
+    width: 50%;
+    padding-left: 0.5em;
+    margin: auto 0;
+}
+
+/*Images*/
+.quals img {
+    max-width: 7.5em;
+    border-radius: 50%;
+}
+
+.quals img:hover {
+    opacity: 0.8;
+}
+
+/* Adjust size and display of icons taken from Awesomefont */
+.icon {
+    font-size: 3.5em;
+    color: black;
+    padding-right: 1%;
+    margin-bottom: 1%;
+}
+
+/* Design of header styles for skills section */
+
+/*Skill title, h1*/
+h1.skill {
+    font-size: 2.5em;
+    padding-bottom: 1.5%;
+    color: rgb(134, 114, 48);
+    text-align: left;
+}
+
+/*Subskill title, h2*/
+.language {
+    font-size: 2em;
+    margin-right: 3%;
+}
+
+/*Project divs*/
+.projects {
+    margin: 1%;
+    border: 0.25em solid rgb(0,0,0);
+    color: rgb(0,0,0);
+    border-radius: 1em;
+    width: 50%;
+    z-index: 0;
+}
+
+/*Project div anchor hover reaction*/
+.projects:hover {
+    border: 0.25em solid rgb(255,208,0);
+    background-image: linear-gradient(rgb(255,255,255),rgb(221, 221, 221));
+    color: rgb(0,0,0);
+}
+
+/*Project images*/
+.projects img {
+    width: 50%;
+    margin: 0.5em;
+    border: 0.2em solid rgb(255,208,0);
+    border-radius: 1em;
+    height: 100%;
+}
+
+/*Tool divs*/
+.tools {
+    margin: 1%;
+    border: 0.25em solid rgb(0,0,0);
+    color: rgb(0,0,0);
+    border-radius: 1em;
+    width: 25%;
+}
+
+/*Tool div anchor hover reaction*/
+.tools:hover {
+    border: 0.25em solid rgb(255,208,0);
+    background-image: linear-gradient(rgb(255,255,255),rgb(221, 221, 221));
+    color: rgb(0,0,0);
+}
+
+/*Tool images*/
+.tools img {
+    margin: 0.5em auto 0 auto;
+    border: 0.2em solid rgb(255,208,0);
+    border-radius: 1em;
+    width: 80%;
+}
+
+/*Project descriptions*/
+.desc {
+    padding: 0.5em;
+}
+    
+.desc h3 {
+    font-size: 1.8em;
+    color: rgb(0,0,0);
+}
+
+/*Logos for skills*/
+.logo {
+    margin: 0 1% 1% 0;
+}
+
+.logo img {
+    max-width: 3em;
+}
+
+.logo img:hover {
+    opacity: 0.8;
+}
+
+/*Design of contact form*/
+.form {
+    background-color: rgba(0,0,0,0.7);
+    width: 80%;
+    border-radius: 12.5%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/*Input boxes*/
+.input {
+    background-color: rgba(255,255,255,0.7);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 0.6em;
+    width: 50%;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    text-align: center;
+}
+
+.textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 10em;
+    text-align: left;
+    border: inset 2px;
+}
+
+/*Button design*/
+input[type=submit] {
+    width: 25%;
+    background-color: rgb(255, 208, 0);
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 0.6em;
+    border-radius: 0.5em;
+    padding: 0.1em;
+}
+
+input[type=submit]:hover {
+    background-image: linear-gradient(rgb(134,114,48), rgb(255,208,0));
+}
+
+/*Links and heading*/
+.form i {
+    font-size: 2em;
+    padding-bottom: 1em;
+    color: rgb(221, 221, 221);
+    transition: 0.3s ease-in-out;
+}
+
+/*mouse over icon*/
+.form i:hover {
+    color: rgb(255,208,0);
+    transition: 0.3s ease-in-out;
+}
+
+/*Design of footer*/
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    border-top: 3px solid rgb(255,208,0);
+}
+
+.footer h4 {
+    margin: 0;
+}
+
+/*After mail is sent*/
+.footer.sent {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* PROJECT PAGES SPECIFIC */
+
+/*Project titles*/
+.ptitle {
+    align-items: baseline;
+}
+
+.ptitle h3 {
+    padding-left: 0.25em;
+}
+
+/*Project photos*/
+.pphotos img {
+    padding: 0.5em;
+    width: 90%;
+    background-color: rgb(0,0,0);
+    border: 0.2em solid rgb(255,208,0);
+    border-radius: 0.5em;
+}
+
+.pphotos img:hover {
+    opacity: 0.7;
+}
+
+/*Line to separate page sections*/
+.separator {
+    height: 5em;
+}
+
+/*Structure of Tools Pages*/
+.toolsright {
+    width: 25%;
+    padding-left: 0.5em;
+}
+
+.toolsleft {
+    width: 75%;
+    padding-right: 0.5em;
+}
+
+/*LIGHTBOX FORMATTING (PURE CSS)*/
+/*Uses :target anchor id trick to display and hide items with higher z-index*/
+
+/*Lightbox design*/
+.lightbox {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    overflow: visible;
+    height: 70%;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -17.5%;
+}
+
+.lightbox img {
+    height:100%;
+    width: auto;
+}
+
+/*Open Lightbox on anchor target*/
+.lightbox:target {
+    display: flex;
+    justify-content: center;
+}
+
+/*Remove previous css for hover on images creating transparency*/
+.lightbox img:hover {
+    opacity: 1;
+}
+
+/*Close button formatting*/
+img.close {
+    background-image: url("../Images/closebtn.jpg");
+    width: 2em;
+    height: 2em;
+    z-index: 11;
+    margin: -2em 0 0 -2em;
+}
+
+img.close:hover {
+    border: 0.2em solid rgb(185, 158, 69);
+}
+
+/* Download File */
+.dl img {
+    width: 15em;
+    background-color: rgb(0,0,0);
+    padding: 1em;
+    border: solid 0.2em rgb(255, 208, 0);
+    border-radius: 0.5em;
+}
+
+.dl img:hover {
+    opacity: 0.7;
+}
+
+/* Media queries for phone screen */
+@media (max-width: 500px) {
+
+    /* Disappears on mobile devices (e.g. appears on browser) from <=500px */
+    .mobile-hide {
+        display: none;
+    }
+
+    /* Appears only on mobile devices (e.g. does not appear on browser) from >500px */
+    .mobile-display {
+        display: flex;
+    }
+
+    /*Title sizing*/
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    /*"Ewan Miles" on nav*/
+    .navbar a {
+        font-size: 1em;
+        padding-left: 10px;
+    }
+
+    /*Flex media*/
+    .flexcenter {
+        flex-direction: column;
+    }
+
+    .flexleft {
+        flex-direction: column;
+    }
+
+    .flexleft.languages {
+        flex-direction: row;
+    }
+
+    /*Qualifications media*/
+    .quals img {
+        width: 50px;
+    }
+
+    .quals p {
+        width: 95%;
+    }
+
+    /*Links media*/
+    .links p {
+        display: none;
+    }
+
+    /*Project page media*/
+    .ptitle h3 {
+        margin: 0 auto;
+    }
+
+    /*Tools page media*/
+    .toolsleft {
+        width: 100%;
+    }
+
+    /*Mobile Dropdown media to avoid font-size change*/
+    .mobile-dropdown a {
+        font-size: 1.2em;
+    }
+}
+
+/* Tablet/phone queries specific to profile section */
+@media (max-width: 750px) {
+
+    .flexcenter.header {
+        flex-direction: column;
+    }
+
+    div.portrait {
+        max-width: 60%;
+        margin: 20px auto 0 auto;
+    }
+
+    div.title {
+        margin: 0;
+        width: 95%;
+    }
+
+    /*Project page media*/
+    .ptitle {
+        flex-direction: column;
+    }
+
+    .ptitle h3 {
+        margin: 0 auto;
+    }
+}
+
+/* Media queries for tablet screen */
+@media (max-width: 950px) {
+
+    /* Disappears on table devices (e.g. appears on browser) from <=9500px */
+    .hide-950 {
+        display: none;
+    }
+
+    /* Appears only on tablet devices (e.g. does not appear on browser) from >950px */
+    .display-950 {
+        display: flex;
+    }
+
+    /*Projects section media*/
+    .mobile-projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-projects a {
+        width: 90%;
+        padding: 10px;
+        flex-direction: row;
+        max-height: 100%;
+        text-align: center;
+    }
+
+    .mobile-projects img {
+        margin: 10px auto 0 auto;
+    }
+
+    .mobile-projects .flexcolumn {
+        flex-direction: row;
+        width: 95%;
+        justify-content: flex-start;
+    }
+
+    .mobile-projects h2#center {
+        text-align: left;
+    }
+
+    a.tools img {
+        display: none;
+    }
+
+    .ptitle h1 {
+        text-align: left;
+    }
+
+    /*Nav media*/
+    nav {
+        display: none;
+    }
+
+    .navbar i {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar h1 {
+        margin-top: 5px;
+    }
+}

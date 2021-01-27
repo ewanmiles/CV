@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ewan Miles | Running Mean</title>
+    <link href="./Stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head> 
+
+<body>
+    <div class="navbar">
+        <div>
+            <h1><a href="./home.php">Ewan Miles</a></h1>
+        </div>
+        <div>
+            <nav>
+                <div class="dropdown"><a href="./home.php#skills">Other Projects
+                    <div class="content">
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="./graph-plotter.html">Graph Plotter</a>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
+                    </div>
+                </a></div>
+                <a href="./home.php">Home</a>
+            </nav>
+
+            <!-- Dropdown for mobile media -->
+            <div class="mobile-dropdown"><i class="fas fa-bars"></i>
+                <div class="content">
+                    <a href="home.php" class="current">Home</a>
+                    <hr>
+                    <p id="center">Projects</p>
+                    <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="./graph-plotter.html">Graph Plotter</a>
+                    <hr>
+                    <p id="center">Other Tools</p>
+                    <a href="./routefinder.html">RouteFinder</a>
+                    <a href="./pingmodeller.html">Ping Modeller</a>
+                    <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
+                    <i id="center" class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="flexleft ptitle">
+            <h1>Running Mean</h1>
+        </div>
+        <div class="flexeven">
+            <div class="toolsleft">
+                <p>The running mean script is useful for similar purposes as the numerical differentiation script, and is about as basic. It is used to help with
+                    taking data that fits a Gaussian (normal) distribution. Essentially, as data is taken, it is logged in the script, and the mean is taken of the
+                    current dataset. Due to the nature of a normal distribution, this will tend to a specific value as more data is taken, which will become more
+                    obvious. This is typically the value desired by the user taking readings.
+                    <br>
+                    <br>
+                    <div class="mobile-display pphotos">
+                        <a href="Images/mean-1.jpg"><img src="./Images/mean-1.jpg" alt="Running Mean"></a>
+                    </div>
+                <p>The point of the script is to find an efficient place to <i>stop</i> taking readings. For example, 100 datapoints to find a mean is unnecessary if
+                    it can be found in 30; this script gives the user a constant visual to help them understand when they know enough trials of data have been taken.
+                    Furthermore, the script plots a running random uncertainty on the mean - which the user usually wants to reduce with more trials of data. Thus it also
+                    becomes visible, using this script, when more trials are unnecessary as they do not provide much reduction in experimental uncertainty.
+                    <br>
+                    <br>
+                    <div class="mobile-display pphotos">
+                        <a href="Images/mean-2.jpg"><img src="./Images/mean-2.jpg" alt="Running Mean"></a>
+                    </div>
+                <p>The script is thus essentially used as a test to find the appropriate number of trials to use when recording experimental data that fits a normal
+                    distribution. This means it has many applications in physics - for example I have used it when finding mean square voltages while examining temperature
+                    dependent noise in a resistor.
+                    <br><br>
+                    The structure of the code is simple - it is a <a href="https://jupyter.org" target="_blank">Jupyter Notebook</a>, wherein the first cell is used
+                    to import the <a href="https://numpy.org" target="_blank">NumPy</a> and <a href="https://matplotlib.org" target="_blank">matplotlib</a> modules, along
+                    with defining empty arrays for the data. The next cell is used to define the running mean function. The function doesn't actually return anything,
+                    it simply appends the arrays appropriately and calculates a new mean to plot. Thus the third cell is re-run for each new datapoint, which is input into
+                    the &ldquo;runningmean&rdquo; function, with the relevant arrays then plotted. The user doesn't need to define what data is being examined for its mean, 
+                    nor its units - they simply input the raw values and the graph will update, with a new mean and random uncertainty. 
+                    <br><br>
+                    Note: the random uncertainty is taken as the standard deviation divided by the square root of the number of datapoints, which is accepted in scientific 
+                    experiments; see <a href="http://www.ikiu.ac.ir/public-files/profiles/items/090ad_1474924017.pdf" target="_blank">Hughes, I.G. & Hase, T.P.A. (2010). 
+                    <i>Measurements and their Uncertainties: A Practical Guide to Modern Error Analysis</i></a>.
+                </p>
+                <br>
+                <div id="center" class="dl">
+                    <h3>Click the image below to download the Running Mean script:</h3>
+                    <br>
+                    <a href="./Download/RunningMean.ipynb" download="RunningMean.ipynb"><img src="./Images/runningmean.jpg" alt="Download Running Mean Script"></a>
+                    <h4>Last updated: 06/05/2020</h4>
+                </div>
+            </div>
+
+            <div class="flexcolumn mobile-hide toolsright">
+                <div class="pphotos">
+                    <a href="#lbox1"><img src="./Images/mean-1.jpg" alt="Running Mean"></a>
+                    <div id="lbox1" class="lightbox">
+                        <img src="./Images/mean-1.jpg" alt="Running Mean">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+
+                    <a href="#lbox2"><img src="./Images/mean-2.jpg" alt="Running Mean"></a>
+                    <div id="lbox2" class="lightbox">
+                        <img src="./Images/mean-2.jpg" alt="Running Mean">
+                        <a href="#page"><img class="close" src="./Images/closebtn.jpg" alt="Close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
