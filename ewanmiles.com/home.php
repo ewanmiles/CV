@@ -77,7 +77,7 @@
             <p><a href="https://twitter.com/MilesEwan" target="_blank">Ewan on Twitter</a></p>
         </div>
         <div>
-            <a href="https://github.com/ewanmiles" target="_blank"><img src="./Images/stack.png" alt="GitHub"></a>
+            <a href="https://github.com/ewanmiles" target="_blank"><img src="./Images/github.png" alt="GitHub"></a>
             <p><a href="https://github.com/ewanmiles" target="_blank">Ewan on GitHub</a></p>
         </div>
     </div>
