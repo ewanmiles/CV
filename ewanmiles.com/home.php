@@ -28,6 +28,7 @@
                     <a href="./pingmodeller.html">Ping Modeller</a>
                     <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
                     <a href="./runningmean.html">Running Mean</a>
+                    <a href="./pokerchart.html">Poker Chart</a>
                     </div>
                 </a></div>
                 <a href="#contact">Contact</a>
