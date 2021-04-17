@@ -589,6 +589,15 @@ img.close:hover {
     opacity: 0.7;
 }
 
+/* Poker Chart styling */
+.poker { 
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    position: absolute;
+    top: 0;
+}
+
 /* Media queries for phone screen */
 @media (max-width: 500px) {
 

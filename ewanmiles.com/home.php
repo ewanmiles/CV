@@ -28,7 +28,7 @@
                     <a href="./pingmodeller.html">Ping Modeller</a>
                     <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
                     <a href="./runningmean.html">Running Mean</a>
-                    <a href="./pokerchart.html">Poker Chart</a>
+                    <a href="pokerchart.co.uk">Poker Chart</a>
                     </div>
                 </a></div>
                 <a href="#contact">Contact</a>
@@ -46,6 +46,7 @@
                     <a href="./pingmodeller.html">Ping Modeller</a>
                     <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
                     <a href="./runningmean.html">Running Mean</a>
+                    <a href="pokerchart.co.uk">Poker Chart</a>
                     <i id="center" class="fas fa-times"></i>
                 </div>
             </div>
