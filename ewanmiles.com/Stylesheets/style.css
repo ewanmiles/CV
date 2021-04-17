@@ -408,50 +408,17 @@ h1.skill {
     opacity: 0.8;
 }
 
-/*Design of contact form*/
+/*Design of area around contact button*/
 .form {
     background-color: rgba(0,0,0,0.7);
     width: 80%;
     border-radius: 12.5%;
-    color: white;
+    color: #FFF;
     margin-left: auto;
     margin-right: auto;
     font-size: 2em;
     margin-bottom: 1em;
-}
-
-/*Input boxes*/
-.input {
-    background-color: rgba(255,255,255,0.7);
-    font-family: 'Catamaran', sans-serif;
-    font-size: 0.6em;
-    width: 50%;
-    border-radius: 0.5em;
-    padding: 0.1em;
-    text-align: center;
-}
-
-.textarea {
-    min-width: 90%;
-    max-width: 90%;
-    min-height: 10em;
-    text-align: left;
-    border: inset 2px;
-}
-
-/*Button design*/
-input[type=submit] {
-    width: 25%;
-    background-color: rgb(255, 208, 0);
-    color: black;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 0.6em;
-    border-radius: 0.5em;
-    padding: 0.1em;
-}
-
-input[type=submit]:hover {
-    background-image: linear-gradient(rgb(134,114,48), rgb(255,208,0));
+    padding-top: 5em;
 }
 
 /*Links and heading*/
@@ -466,6 +433,31 @@ input[type=submit]:hover {
 .form i:hover {
     color: rgb(255,208,0);
     transition: 0.3s ease-in-out;
+}
+
+.textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 10em;
+    text-align: left;
+    border: inset 2px;
+}
+
+/*Button design*/
+.button {
+    margin: 0 auto;
+    width: 25%;
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 0.6em;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    border: 2px solid rgb(255,208,0);
+}
+
+.button:hover {
+    opacity: 0.7;
 }
 
 /*Design of footer*/

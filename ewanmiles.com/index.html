@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <link rel="icon" type="image/png" href="Images/emicon.png"/>
+
     <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -303,23 +305,7 @@
     <h1 id="contact" class="subtitle">Contact Me</h1>
 
     <div id="center" class="form">
-        <form action="email.php" method="POST">
-                
-            <label for="custname">Name</label>
-            <br>
-            <input id="custname" name="name" class="input" type="text" size="20" !required>
-            <br>
-            <label for="custemail">Email</label>
-            <br>
-            <input id="custemail" name="email" class="input" type="text" size="20" !required>
-            <br>
-            <label for="custmessage">Your message</label>
-            <br>
-            <textarea id="custmessage" name="message" class="input textarea" rows="9" cols="30"></textarea>
-            <br>
-            <input id="submit" type="submit" name="submit" value="Send"></input>
-    
-        </form>
+        <div class="button" onClick="userEmail()">Email Ewan</div>
 
         <h4>Alternatively...</h4>
         <div class="flexeven">
@@ -332,13 +318,24 @@
     <div class="footer">
         <h4>Ewan Miles</h4>
         <h4><span id="time"></span></h4>
-    
-        <!--Script for date in footer-->
-        <script>
-        var today = new Date();
-        document.getElementById('time').innerHTML=today;
-        </script>  
-
     </div>
+
+    <!--Script for date in footer-->
+    <script>
+      var today = new Date();
+
+      var mins = today.getMinutes();
+
+      if (mins < 10) {
+        mins = `0${today.getMinutes()}`;
+      }
+
+      document.getElementById('time').innerHTML=`${today.getHours()}:${mins}, ${today.getDate()}/${today.getMonth()}/${today.getFullYear()}`;
+    </script>  
+
+    <!--Script for email -->
+    <script>
+        const userEmail = () => { window.open('mailto:ewan.a.miles@gmail.com'); };
+    </script>
 </body>
 </html>
