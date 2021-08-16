@@ -172,6 +172,80 @@ a.olymdrinks:hover {
     opacity: 0.7;
 }
 
+/*Olymdrinks II*/
+
+.table-2 {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-2 tr {
+    border-bottom: solid 1px lightgrey;
+}
+
+.back, .back:active, .back:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.back:hover {
+    opacity: 0.7;
+}
+
+.event {
+    width: 170px;
+    border-right: 1px solid lightgrey;
+}
+
+.oly-update, .oly-addData {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.oly-update button, .oly-addData select {
+    font-size: 1.5em;
+    background: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.oly-update button:hover {
+    border: solid 2px red;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+
+.oly-addData select {
+    font-size: 1.2em;
+}
+
+.oly-addData select:focus {
+    border: solid 2px blue;
+}
+
+.oly-ranking {
+    display: flex;
+    flex-direction: column;
+}
+
+.oly-ranking .nation {
+    padding: 0 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 2px 5px;
+    background: white;
+}
+
+.oly-ranking h1 {
+    font-family: "Verdana";
+    font-weight: normal;
+}
+
 /* General design of horizontal flexbox with items aligned left */
 .flexleft {
     display: flex;

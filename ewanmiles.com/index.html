@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="Images/emicon.png"/>
 
     <script src="https://kit.fontawesome.com/31df0250b7.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head> 
@@ -30,7 +31,7 @@
                     <a href="./pingmodeller.html">Ping Modeller</a>
                     <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
                     <a href="./runningmean.html">Running Mean</a>
-                    <a href="pokerchart.co.uk">Poker Chart</a>
+                    <a href="https://pokerchart.co.uk" target="_blank">Poker Chart</a>
                     </div>
                 </a></div>
                 <a href="#contact">Contact</a>
@@ -42,13 +43,13 @@
                     <p id="center">Projects</p>
                     <a href="./graph-plotter.html">Graph Plotter</a>
                     <a href="./derivative-calculator.html">Derivative Calculator</a>
+                    <a href="https://pokerchart.co.uk" target="_blank">Poker Chart</a>
                     <hr>
                     <p id="center">Tools</p>
                     <a href="./routefinder.html">RouteFinder</a>
                     <a href="./pingmodeller.html">Ping Modeller</a>
                     <a href="./numericaldifferentiation.html">Numerical Differentiation</a>
                     <a href="./runningmean.html">Running Mean</a>
-                    <a href="pokerchart.co.uk">Poker Chart</a>
                     <i id="center" class="fas fa-times"></i>
                 </div>
             </div>
@@ -65,8 +66,8 @@
         </div>
     </div>
     <div class="text">
-        <p>I am a motivated MSci Physics student currently in attendance at University College London. I am in third
-            year for the 2020/21 academic year, having achieved a 1st class grade in both second and first year.
+        <p>I am a motivated MSci Physics student currently in attendance at University College London. I am in my final
+            year for the 2021/22 academic year, where I will be working on my Master's, having achieved a 1st class grade in my nominal BSc.
             I have experience working in different environments, alongside other 
             accomplishments, but am looking to kick-start my career in the programming and data science sectors.
     </div>
@@ -168,6 +169,17 @@
     <h1 id="experience" class="subtitle">Employment & Experience</h1>
 
     <div class="text">
+        <h2 class="year">2019-present</h2>
+        <h2>Computational Physics Demonstrator</h2>
+        <div class="flexleft company">
+            <img src="./Images/neutriknow.png" alt="NeutriKnow" class="neutriknow">
+            <h3>NeutriKnow</h3>
+        </div>
+        <ul>
+            <li>Student-led startup based around introducing sixth-formers/college students the basics of Python</li>
+            <li>A role where I give direct feedback to students about improving their code, including things like the right level of commenting and function/loop structures</li>
+            <li>Aims to introduce them to computational physics on a basis that orients them towards the UCL physics course</li>
+        </ul>
         <h2 class="year">2019-2020</h2>
         <h2>121 ASCENTS Student Mentoring</h2>
         <div class="flexleft company">
@@ -233,7 +245,7 @@
     <h1 id="skills" class="subtitle">Skills & Projects</h1>
 
     <div class = "text">
-        <h1 class="skill">Coding & Software Development</h1>
+        <h1 class="skill">Mathematical & System Software</h1>
         <div class="flexleft">
             <i class="fab fa-python icon"></i>
             <h2 class="language">Python</h2>
@@ -289,23 +301,49 @@
         <br>
         <br>
 
+        <h1 class="skill">Front-end Development</h1>
+
         <div class="flexleft languages">
             <i class="fab fa-html5 icon"></i>
             <h2 class="language">HTML5</h2>
-            <i class="fab fa-css3-alt icon"></i>
-            <h2 class="language">CSS</h2>
+            <i class="fab fa-sass icon"></i>
+            <h2 class="language">Sass/SCSS</h2>
+            <span class="iconify icon" data-icon="cib:typescript"></span>
+            <h2 class="language">TypeScript</h2>
         </div>
         
-        <p>In addition to my training in Python, I am self-taught in front-end languages HTML5 and CSS. I was part of a team that worked on writing the 
-            homepage for the Pompey Pirates literacy hub (not yet launched), which is a volunteering service set up to help children with reading
-            and literacy skills. Furthermore, this website is itself exhibits some of what I've learned, including pure CSS dropdown menus and image lightboxes.</p>
+        <p>In addition to my training in Python, I am self-taught in the HTML/SCSS/TS trio, while currently engaged in multiple front-end projects. 
+            My main project that demonstrates my skills would be <a href="https://pokerchart.co.uk" target="_blank">PokerChart</a>, a web-app I built solo
+            using the Angular/Ionic frameworks. This involved learning TypeScript as a better extension to JavaScript, teaching me about strict type-setting
+            and its use in debugging and error avoidance.</p>
         <br>
+        <div class="flexeven">
+            <img class="projectImage mob-shown" src="./Images/pokerchart-1.png" alt="PokerChart App">
+            <img class="projectImage mob-hidden" src="./Images/pokerchart-2.png" alt="PokerChart App">
+            <img class="projectImage mob-hidden" src="./Images/pokerchart-3.png" alt="PokerChart App">
+        </div>
+        <br>
+        <p>PokerChart allows users to track their poker play throughout the game. It doesn't have to be linked to any
+            other software and can be used for live home games or in conjunction with online play. It shows you stats about
+            your wins and your fold consistency among other things.</p> 
+        <br>
+        <p>From a technical aspect, it is the first solo project of mine connected to a Google Firebase hosted backend, which 
+            allowed me to build authentication services for user accounts. It also means games can be saved on a database to be 
+            observed later on. Furthermore, group games have been implemented using a room-key system, which allows other users to track
+            each other's games while playing against one another. Each player is listed in the room and given a colour and, like seen above,
+            players' stack sizes and average changes throughout the game are all shown on one graph to compare.</p>
+        <br>
+        <p>DISCLAIMER: PokerChart might still be buggy at stages, it is an ongoing project!</p>
     </div>
 
     <h1 id="contact" class="subtitle">Contact Me</h1>
 
     <div id="center" class="form">
-        <div class="button" onClick="userEmail()">Email Ewan</div>
+        <span>This button will open your computer's email program</span>
+        <div class="flexeven">
+            <i class="fas fa-envelope no-padding" onClick="userEmail()"></i>
+        </div>
+        <span>Feel free to drop me a message at any time!</span>
 
         <h4>Alternatively...</h4>
         <div class="flexeven">

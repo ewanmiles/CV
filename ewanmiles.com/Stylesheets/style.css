@@ -288,6 +288,10 @@ nav {
     margin-right: 0.5em;
 }
 
+.company .neutriknow {
+    max-width: 2.75em;
+}
+
 .company img:hover {
     opacity: 0.8;
 }
@@ -361,6 +365,23 @@ h1.skill {
     height: 100%;
 }
 
+/*PokerChart display*/
+.projectImage {
+    width: 30vw;
+    height: fit-content;
+    padding: 1vh;
+}
+
+@media (max-width: 750px) {
+    .mob-hidden {
+        display: none;
+    }
+
+    .mob-shown {
+        width: 60vw;
+    }
+}
+
 /*Tool divs*/
 .tools {
     margin: 1%;
@@ -418,7 +439,7 @@ h1.skill {
     margin-right: auto;
     font-size: 2em;
     margin-bottom: 1em;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 /*Links and heading*/
@@ -427,6 +448,14 @@ h1.skill {
     padding-bottom: 1em;
     color: rgb(221, 221, 221);
     transition: 0.3s ease-in-out;
+}
+
+.form .no-padding {
+    padding-bottom: 0;
+}
+
+.form span {
+    font-size: 3vh;
 }
 
 /*mouse over icon*/
@@ -629,6 +658,7 @@ img.close:hover {
 
     .flexleft.languages {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     /*Qualifications media*/
